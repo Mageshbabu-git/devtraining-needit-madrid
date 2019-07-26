@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Incident-Needit" max_length="40" name="x_58872_needit_incident_needit" type="collection">
+        <element label="created" max_length="40" name="created" type="glide_date"/>
+        <element label="Due Date" max_length="40" name="due_date" type="due_date"/>
+        <element default="100" label="Incident #" max_length="8" name="incident" type="integer"/>
+        <element label="Incident Name" max_length="40" name="incident_name" type="string"/>
+        <element choice="1" display="true" label="Incident State" mandatory="true" max_length="10" name="incident_state" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Cancelled" value="Cancelled"/>
+                <element inactive_on_update="false" label="Closed" value="Closed"/>
+            </choice>
+        </element>
+    </element>
+</database>
